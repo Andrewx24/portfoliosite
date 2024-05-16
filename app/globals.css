@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+.whitespace {
+  white-space: pre-wrap;
+}
+
+@layer base {
+  body {
+    @apply bg-[#f4f3ee] text-gray-800 tracking-wide dark:bg-[#152028];
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-bold;
+  }
+
+  h1 {
+    @apply text-4xl sm:text-5xl md:text-6xl;
+  }
+
+  h2 {
+    @apply text-3xl sm:text-4xl md:text-5xl;
+  }
+
+  h3 {
+    @apply text-sm sm:text-2xl;
+  }
+
+  li {
+    @apply cursor-pointer;
+  }
+
+  .btn {
+    @apply shadow-xl shadow-gray-400 rounded-xl uppercase bg-gradient-to-r from-[#21568a] to-[#1d97bd] text-white;
+  }
+}
