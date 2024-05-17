@@ -16,7 +16,7 @@ import sqlImg from '/public/assets/skills/sql.png';
 import mongoImg from '/public/assets/skills/mongo.png';
 import awsImg from '/public/assets/skills/aws.png';
 import jestImg from '/public/assets/skills/jest.png';
-import graphQLImg from '/public/assets/skills/graphql.png';
+import graphQLImg from '/public/assets/skills/graphQL.png';
 const skills = [
   { img: htmlImg, label: 'HTML' },
   { img: cssImg, label: 'CSS' },
