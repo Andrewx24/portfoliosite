@@ -34,7 +34,7 @@ const Contact = () => {
             <div className="grid grid-cols-2 gap-8 py-4 sm:flex sm:flex-wrap sm:items-center sm:justify-around">
               <div className="mx-auto">
                 <a
-                  href="https://www.linkedin.com/in/aleceiber"
+                  href="https://www.linkedin.com/in/andrewaliaj/"
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -46,7 +46,7 @@ const Contact = () => {
 
               <div className="mx-auto">
                 <a
-                  href="https://www.github.com/a-eiber"
+                  href="https://github.com/Andrewx24"
                   target="_blank"
                   rel="noreferrer"
                 >
