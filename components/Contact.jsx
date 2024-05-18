@@ -21,6 +21,18 @@ const Contact = () => {
   const [inputRef, setInputFocus] = useFocus();
   const [state, handleSubmit] = useForm(process.env.NEXT_PUBLIC_FORM);
   
+  if (state.succeeded) {
+    setTimeout(() => {
+      window.location.reload();
+    }, 3000);
+    
+    return (
+      <div className="w-full h-screen flex justify-center items-center">
+        <h1 className="text-5xl">Thanks for your submission, I will get back to you ASAP.</h1>
+      </div>
+    );
+  }
+
   return (
     <section id="contact" className="w-full container lg:h-screen">
       <div className="max-w-[1240px] m-auto px-2 pt-8 w-full">
@@ -85,7 +97,7 @@ const Contact = () => {
                     id="user_name"
                     className="border-2 rounded-lg p-3 flex border-gray-300 dark:border-white text-lg dark:bg-slate-100"
                   />
-                  <ValidationError prefix="Name" field="name" errors={state.errors} />
+                  <ValidationError prefix="Name" field="user_name" errors={state.errors} />
                 </div>
                 <div className="flex flex-col">
                   <label htmlFor="user_email" className="uppercase text-sm py-2 dark:text-white">
@@ -98,7 +110,7 @@ const Contact = () => {
                     id="user_email"
                     className="border-2 rounded-lg p-3 flex border-gray-300 dark:border-white text-lg dark:bg-slate-100"
                   />
-                  <ValidationError prefix="Email" field="email" errors={state.errors} />
+                  <ValidationError prefix="Email" field="user_email" errors={state.errors} />
                 </div>
               </div>
               <div className="flex flex-col py-2">
