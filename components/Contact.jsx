@@ -19,7 +19,7 @@ const useFocus = () => {
 
 const Contact = () => {
   const [inputRef, setInputFocus] = useFocus();
-  const [state, handleSubmit] = useForm(NEXT_PUBLIC_FORM);
+  const [state, handleSubmit] = useForm(process.env.NEXT_PUBLIC_FORM);
   
   return (
     <section id="contact" className="w-full container lg:h-screen">
