@@ -18,18 +18,19 @@ export default function RootLayout({ children }) {
   return (
     
     <html lang="en">
-      <Analytics>
+      
      <body className={inter.className}>
-    
+      
         <Header/>
         <Main/>
         <About/>
         <Skills/>
         <Contact/>
+        <Analytics/>
         {children}
         
         </body>
-        </Analytics>
+        
     </html>
     
 
