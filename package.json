@@ -12,6 +12,7 @@
     "@formspree/react": "^2.5.1",
     "@nextui-org/tooltip": "^2.0.33",
     "@vercel/analytics": "^1.2.2",
+    "@vercel/speed-insights": "^1.0.10",
     "next": "14.2.3",
     "react": "^18",
     "react-dom": "^18",
