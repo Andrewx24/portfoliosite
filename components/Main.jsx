@@ -25,11 +25,11 @@ const Main = () => {
       >
         <div>
           <h1 className="animate__animated animate__zoomInDown py-4 text-gray-700 dark:text-white">
-            Hello, I am Andrew
+           Full Stack Developer
           </h1>
-    
-          <p className="py-4 text-gray-600 max-w-[38em] m-auto dark:text-white">
-            I&apos;m a{" "}
+   
+          <p className="py-4 text-gray-600 max-w-[41em] m-auto dark:text-white">
+            
             <span className="text-[#21568a] font-bold dark:text-white">
               <strong>Software Engineer</strong>
             </span>{" "}
@@ -37,8 +37,7 @@ const Main = () => {
             <span className="text-[#21568a] font-bold dark:text-white">
               <strong>Full Stack Developer</strong>
             </span>{" "}
-            based out of the  New York City Area. I love programming and have a passion for
-            building tech that&apos;s impactful to people.
+            based out of the  New York City Area. I specialize in <span className="text-[#21568a] font-bold dark:text-white"> <strong>Javascript,React,Next.js,Node.js,Typescript,Python,SQL, and AWS.</strong> </span> Details are listed below. 
           </p>
           <div className="flex items-center justify-between max-w-[330px] m-auto py-4">
             <a

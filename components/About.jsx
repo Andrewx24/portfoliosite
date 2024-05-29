@@ -25,7 +25,7 @@ const About = () => {
             
 
               <p className="py-2 text-gray-600 dark:text-white">
-              Detail-oriented Full Stack Developer, I bring extensive experience with JavaScript, TypeScript, and Python to every project. I specialize in designing modern applications with a strong focus on user interface aesthetics. By leveraging the capabilities of React and Next.js, combined with the flexibility of Tailwind CSS, I create intuitive and visually compelling frontends that enhance user interactions. On the backend, I utilize Node.js and Django to deliver robust solutions aligned with strategic business goals. My expertise extends to managing databases with SQL and MongoDB, and I implement AWS for hosting solutions that are reliable, scalable, and secure.
+              Detail-oriented Full Stack Developer, I bring extensive experience with <strong>JavaScript, TypeScript, and Python </strong> to every project. I specialize in designing modern applications with a strong focus on user interface aesthetics. By leveraging the capabilities of <strong>React and Next.js </strong>, combined with the flexibility of <strong> Tailwind CSS </strong>, I create intuitive and visually compelling frontends that enhance user interactions. On the backend, I utilize <strong> Node.js and Django </strong> to deliver robust solutions aligned with strategic business goals. My expertise extends to managing databases with <strong> SQL and MongoDB </strong>, and I implement <strong> AWS </strong> for hosting solutions that are reliable, scalable, and secure.Additionally, I am proficient in <strong>Redux, React Query, Jest, React Testing Library, GraphQL, Git, GitHub, Express.js, and Flask</strong>.
                 
               </p>
 

@@ -1,7 +1,6 @@
-import React from 'react';
+
 import Image from 'next/image';
-import htmlImg from '/public/assets/skills/html.png';
-import cssImg from '/public/assets/skills/css.png';
+
 import javascriptImg from '/public/assets/skills/javascript.png';
 import pythonImg from '/public/assets/skills/python.png';
 import typescriptImg from '/public/assets/skills/typescript.png';
@@ -17,24 +16,35 @@ import mongoImg from '/public/assets/skills/mongo.png';
 import awsImg from '/public/assets/skills/aws.png';
 import jestImg from '/public/assets/skills/jest.png';
 import graphQLImg from '/public/assets/skills/graphQL.png';
+import dockerImg from '/public/assets/skills/docker.png';
+import gitImg from '/public/assets/skills/git.png';
+import gitHubImg from '/public/assets/skills/github.png';
+import flaskImg from '/public/assets/skills/flask.png';
+import reactqueryImg from '/public/assets/skills/reactquery.png';
+import reacttestingImg from '/public/assets/skills/reacttesting.png'; 
 const skills = [
-  { img: htmlImg, label: 'HTML' },
-  { img: cssImg, label: 'CSS' },
+  
   { img: javascriptImg, label: 'JavaScript' },
+  { img: reactImg, label: 'React' },
+  { img: nextjsImg, label: 'Next.js' }, 
   { img: typescriptImg, label: 'TypeScript' },
   { img: pythonImg, label: 'Python' },
-  { img: reactImg, label: 'React' },
   { img: reduxImg, label: 'Redux' },
   { img: tailwindImg, label: 'Tailwind CSS' },
-  { img: nextjsImg, label: 'Next.js' },
   { img: nodeImg, label: 'Node.js' },
   { img: expressImg, label: 'Express.js' },
   { img: djangoImg, label: 'Django' },
   { img: sqlImg, label: 'SQL' },
   { img: mongoImg, label: 'MongoDB' },
   { img: awsImg, label: 'AWS' },
-    { img: jestImg, label: 'Jest' },
-    { img: graphQLImg, label: 'GraphQL' },
+  { img: jestImg, label: 'Jest' },
+  { img: graphQLImg, label: 'GraphQL' },
+  { img: dockerImg, label: 'Docker' },
+  { img: gitImg, label: 'Git' },
+  { img: gitHubImg, label: 'GitHub' },
+  { img: flaskImg, label: 'Flask' },
+  { img: reactqueryImg, label: 'React Query' },
+  { img: reacttestingImg, label: 'React Testing Library' },
 ];
 
 const Skills = () => {
