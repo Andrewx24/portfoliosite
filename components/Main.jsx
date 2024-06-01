@@ -28,16 +28,16 @@ const Main = () => {
            Full Stack Developer
           </h1>
    
-          <p className="py-4 text-gray-600 max-w-[41em] m-auto dark:text-white">
-            
+          <p className="py-4 text-gray-600   max-w-fit m-auto dark:text-white">
+           I am a  
             <span className="text-[#21568a] font-bold dark:text-white">
-              <strong>Software Engineer</strong>
+              <strong> Software Engineer</strong>
             </span>{" "}
-            and a{" "}
+            and {" "}
             <span className="text-[#21568a] font-bold dark:text-white">
               <strong>Full Stack Developer</strong>
             </span>{" "}
-            based out of the  New York City Area. I specialize in <span className="text-[#21568a] font-bold dark:text-white"> <strong>Javascript,React,Next.js,Node.js,Typescript,Python,SQL, and AWS.</strong> </span> Details are listed below. 
+            based in the  New York City area,  specializing in <span className="text-[#21568a] font-bold dark:text-white"> <strong>Javascript,React,Next.js,Node.js,Typescript,Python,SQL, and AWS.</strong> </span> Details are listed below. 
           </p>
           <div className="flex items-center justify-between max-w-[330px] m-auto py-4">
             <a
