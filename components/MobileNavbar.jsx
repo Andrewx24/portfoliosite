@@ -2,7 +2,7 @@
 import Link from "next/link";
 import React, { useState } from "react";
 
-const Header = () => {
+const MobileNavbar = () => {
     const [collapse, setCollapse] = useState(true);
 
     const handleCollapse = () => {
@@ -25,7 +25,7 @@ const Header = () => {
                         </svg>
                     </button>
                 </div>
-                <div className={`${collapse ? "hidden" : "block"} w-full md:block md:w-auto`}>
+                <div className={`${collapse ? "hidden" : "block"} w-full md:hidden`}>
                     <ul className="flex flex-col items-center mt-4 md:flex-row md:space-x-5 md:mt-0 md:text-sm md:font-medium">
                         <li
                             className="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white dark:hover:bg-transparent dark:border-gray-700 dark:hover:text-slate-400"
@@ -58,6 +58,4 @@ const Header = () => {
     );
 };
 
-export default Header;
-
-
+export default MobileNavbar;

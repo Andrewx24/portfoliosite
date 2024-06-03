@@ -7,6 +7,7 @@ import Skills from "@/components/Skills";
 import Contact from "@/components/Contact";
 import { Analytics } from "@vercel/analytics/react"
 import { SpeedInsights } from "@vercel/speed-insights/next"
+import MobileNavbar from "@/components/MobileNavbar";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,8 +22,9 @@ export default function RootLayout({ children }) {
     <html lang="en">
       
      <body className={inter.className}>
-      
+     
         <Header/>
+  
         <Main/>
         <About/>
         <Skills/>
