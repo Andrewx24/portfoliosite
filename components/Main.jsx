@@ -3,7 +3,6 @@ import Image from "next/image";
 import Head from "next/head";
 import React, { useState } from "react";
 import { AiOutlineMail } from "react-icons/ai";
-import { GrDocumentUser } from "react-icons/gr";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import Link from "next/link";
 import { Tooltip } from "@nextui-org/tooltip";
@@ -12,20 +11,15 @@ const Main = () => {
   const [collapse, setCollapse] = useState(true);
 
   return (
-    <div className="w-full text-center container mx-auto">
+    <div className="w-full text-center container mx-auto py-16">
       <Head>
         <title>Andrew Aliaj - Home</title>
       </Head>
-      <main
-        className={`max-w-[1240px] mx-auto p-2 flex flex-col justify-center items-center ${
-          collapse ? "min-h-screen" : "mt-20"
-        }`}
-      >
-        <div>
+      <main className="max-w-[1240px] mx-auto p-4 flex flex-col justify-center items-center">
+        <div className="w-full">
           <h1 className="animate__animated animate__zoomInDown py-4 text-gray-700 dark:text-white text-3xl sm:text-4xl lg:text-5xl">
             Full Stack Developer
           </h1>
-
           <p className="py-4 text-gray-600 max-w-fit mx-auto dark:text-white text-lg sm:text-xl">
             I am a
             <span className="text-[#21568a] font-bold dark:text-white">
@@ -82,3 +76,4 @@ const Main = () => {
 };
 
 export default Main;
+
