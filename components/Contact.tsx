@@ -9,13 +9,17 @@ import { Tooltip } from "@nextui-org/tooltip";
 import { useForm, ValidationError } from "@formspree/react";
 
 const useFocus = () => {
-  const htmlElRef = useRef(null);
+  // Use HTMLInputElement as the type for the ref
+  const htmlElRef = useRef<HTMLInputElement>(null);
   const setFocus = () => {
-    htmlElRef.current && htmlElRef.current.focus();
+    if (htmlElRef.current) {
+      htmlElRef.current.focus();
+    }
   };
 
   return [htmlElRef, setFocus];
 };
+
 
 const Contact = () => {
   const [inputRef, setInputFocus] = useFocus();
