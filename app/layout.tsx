@@ -5,9 +5,10 @@ import Main from "@/components/Main";
 import About from "@/components/About";
 import Skills from "@/components/Skills";
 import Contact from "@/components/Contact";
-import { Analytics } from "@vercel/analytics/react"
-import { SpeedInsights } from "@vercel/speed-insights/next"
+import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import MobileNavbar from "@/components/MobileNavbar";
+import { ReactNode } from "react";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,28 +17,24 @@ export const metadata = {
   description: "software engineer, full stack developer, new york city area, programming, tech, impactful, people, coding",
 };
 
-export default function RootLayout({ children }) {
+// Define the props type for RootLayout
+interface RootLayoutProps {
+  children: ReactNode;
+}
+
+export default function RootLayout({ children }: RootLayoutProps) {
   return (
-    
     <html lang="en">
-      
-     <body className={inter.className}>
-     
-        <Header/>
-  
-        <Main/>
-        <About/>
-        <Skills/>
-        <Contact/>
-        <Analytics/>
-        <SpeedInsights/>
+      <body className={inter.className}>
+        <Header />
+        <Main />
+        <About />
+        <Skills />
+        <Contact />
+        <Analytics />
+        <SpeedInsights />
         {children}
-        
-        </body>
-        
+      </body>
     </html>
-    
-
-
   );
 }
