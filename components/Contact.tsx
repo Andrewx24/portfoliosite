@@ -1,26 +1,28 @@
 "use client";
 
 import Link from 'next/link';
-import React, { useRef } from 'react';
+import React, { useRef, RefObject } from 'react';
 import { AiOutlineMail } from 'react-icons/ai';
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
-import { HiOutlineChevronDoubleUp } from 'react-icons/hi';
 import { Tooltip } from "@nextui-org/tooltip";
 import { useForm, ValidationError } from "@formspree/react";
 
-const useFocus = () => {
-  const htmlElRef = useRef(null);
+// Define a hook for focusing on the input field
+const useFocus = (): [RefObject<HTMLInputElement>, () => void] => {
+  const htmlElRef = useRef<HTMLInputElement>(null);
   const setFocus = () => {
-    htmlElRef.current && htmlElRef.current.focus();
+    if (htmlElRef.current) {
+      htmlElRef.current.focus();
+    }
   };
 
   return [htmlElRef, setFocus];
 };
 
-const Contact = () => {
+const Contact: React.FC = () => {
   const [inputRef, setInputFocus] = useFocus();
-  const [state, handleSubmit] = useForm(process.env.NEXT_PUBLIC_FORM);
-  
+  const [state, handleSubmit] = useForm(process.env.NEXT_PUBLIC_FORM || "");
+
   if (state.succeeded) {
     setTimeout(() => {
       window.location.reload();
@@ -71,7 +73,6 @@ const Contact = () => {
               <div className="mx-auto">
                 <Tooltip
                   content="Use the form below"
-                  rounded
                   color="primary"
                   onClick={setInputFocus}
                   className="rounded-full shadow-lg shadow-gray-400 p-8 cursor-pointer hover:scale-110 ease-in duration-300 dark:text-white dark:shadow-none"
@@ -122,7 +123,7 @@ const Contact = () => {
                   name="message"
                   id="message"
                   className="border-2 rounded-lg p-3 border-gray-300 text-lg dark:border-white dark:bg-slate-100"
-                  rows="10"
+                  rows={10}
                 />
                 <ValidationError prefix="Message" field="message" errors={state.errors} />
               </div>

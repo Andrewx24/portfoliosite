@@ -1,4 +1,5 @@
 'use client';
+
 import Image from "next/image";
 import Head from "next/head";
 import React, { useState } from "react";
@@ -44,7 +45,7 @@ const Main = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <Tooltip content={"LinkedIn"} rounded color="primary">
+              <Tooltip content={"LinkedIn"} color="primary">
                 <div className="rounded-full shadow-lg shadow-gray-400 p-4 sm:p-6 cursor-pointer hover:scale-110 ease-in duration-300 dark:bg-white dark:shadow-none">
                   <FaLinkedinIn />
                 </div>
@@ -55,13 +56,13 @@ const Main = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <Tooltip content={"GitHub"} rounded color="primary">
+              <Tooltip content={"GitHub"} color="primary">
                 <div className="rounded-full shadow-lg shadow-gray-400 p-4 sm:p-6 cursor-pointer hover:scale-110 ease-in duration-300 dark:bg-white dark:shadow-none">
                   <FaGithub />
                 </div>
               </Tooltip>
             </a>
-            <Tooltip content={"Email me below"} rounded color="primary">
+            <Tooltip content={"Email me below"} color="primary">
               <Link href="/#contact">
                 <div className="rounded-full shadow-lg shadow-gray-400 p-4 sm:p-6 cursor-pointer hover:scale-110 ease-in duration-300 dark:bg-white dark:shadow-none">
                   <AiOutlineMail />
@@ -76,4 +77,3 @@ const Main = () => {
 };
 
 export default Main;
-
