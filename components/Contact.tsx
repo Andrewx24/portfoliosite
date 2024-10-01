@@ -47,7 +47,7 @@ const Contact: React.FC = () => {
           <div className="p-4">
             <div className="grid grid-cols-2 gap-8 py-4 sm:flex sm:flex-wrap sm:items-center sm:justify-around">
               <div className="mx-auto">
-                <a
+                <Link
                   href="https://www.linkedin.com/in/andrewaliaj/"
                   target="_blank"
                   rel="noreferrer"
@@ -55,11 +55,11 @@ const Contact: React.FC = () => {
                   <div className="rounded-full shadow-lg shadow-gray-400 p-8 cursor-pointer hover:scale-110 ease-in duration-300 dark:text-white dark:shadow-none">
                     <FaLinkedinIn className="mx-auto mb-1" /> LinkedIn
                   </div>
-                </a>
+                </Link>
               </div>
 
               <div className="mx-auto">
-                <a
+                <Link
                   href="https://github.com/Andrewx24"
                   target="_blank"
                   rel="noreferrer"
@@ -67,7 +67,7 @@ const Contact: React.FC = () => {
                   <div className="rounded-full shadow-lg shadow-gray-400 p-8 cursor-pointer hover:scale-110 ease-in duration-300 dark:text-white dark:shadow-none">
                     <FaGithub className="mx-auto mb-1" /> GitHub
                   </div>
-                </a>
+                </Link>
               </div>
 
               <div className="mx-auto">
