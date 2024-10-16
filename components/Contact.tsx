@@ -4,6 +4,7 @@ import React, { useRef, RefObject, useState } from 'react';
 import { AiOutlineMail } from 'react-icons/ai';
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
 import { Tooltip } from "@nextui-org/tooltip";
+import Link from 'next/link';
 
 const useFocus = (): [RefObject<HTMLInputElement>, () => void] => {
   const htmlElRef = useRef<HTMLInputElement>(null);
