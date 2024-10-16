@@ -1,6 +1,5 @@
 import Image from "next/image";
 import React from "react";
-import Link from "next/link";
 import profileImg from '@/public/assets/profile/profile.png';
 
 const About = () => {
@@ -17,8 +16,8 @@ const About = () => {
               <Image
                 src={profileImg}
                 alt="Profile Image"
-                width="400"
-                height="400"
+                width={400}
+                height={400}
                 className="rounded-xl"
               />
             </figure>
