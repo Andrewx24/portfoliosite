@@ -9,17 +9,18 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@formspree/react": "^2.5.1",
     "@nextui-org/tooltip": "^2.0.39",
     "@vercel/analytics": "^1.3.1",
     "@vercel/speed-insights": "^1.0.12",
     "next": "15.0.0-rc.0",
+    "nodemailer": "^6.9.15",
     "react": "19.0.0-rc-a03254bc-20240905",
     "react-dom": "19.0.0-rc-a03254bc-20240905",
     "react-icons": "^5.3.0"
   },
   "devDependencies": {
     "@types/node": "^22.5.4",
+    "@types/nodemailer": "^6.4.16",
     "@types/react": "^18.3.5",
     "eslint": "^8.57.0",
     "eslint-config-next": "15.0.0-rc.0",

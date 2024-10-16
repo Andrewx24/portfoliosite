@@ -1,10 +1,7 @@
 
 
 
-export default funtion About() { 
-    return (
-
-        
-    )
+export default function About() { 
+    
 
 }
