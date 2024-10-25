@@ -1,16 +1,13 @@
-'use client';
 
-import Image from "next/image";
+
 import Head from "next/head";
-import React, { useState } from "react";
+import React from "react";
 import { AiOutlineMail } from "react-icons/ai";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import Link from "next/link";
 import { Tooltip } from "@nextui-org/tooltip";
 
 const Main = () => {
-  const [collapse, setCollapse] = useState(true);
-
   return (
     <div className="w-full text-center container mx-auto py-16">
       <Head>
@@ -19,10 +16,10 @@ const Main = () => {
       <main className="max-w-[1240px] mx-auto p-4 flex flex-col justify-center items-center">
         <div className="w-full">
           <h1 className="animate__animated animate__zoomInDown py-4 text-gray-700 dark:text-white text-3xl sm:text-4xl lg:text-5xl">
-            Full Stack Developer
+            Software Engineer & Full Stack Developer
           </h1>
           <p className="py-4 text-gray-600 max-w-fit mx-auto dark:text-white text-lg sm:text-xl">
-            I am a
+            Experienced
             <span className="text-[#21568a] font-bold dark:text-white">
               <strong> Software Engineer</strong>
             </span>{" "}
@@ -30,14 +27,14 @@ const Main = () => {
             <span className="text-[#21568a] font-bold dark:text-white">
               <strong>Full Stack Developer</strong>
             </span>{" "}
-            based in the New York City area, specializing in{" "}
+            building innovative solutions in the NY Tri-State area. Passionate about creating scalable applications with{" "}
             <span className="text-[#21568a] font-bold dark:text-white">
               <strong>
                 JavaScript, React, Next.js, Node.js, TypeScript, Python, SQL,
-                and AWS.
+                and AWS
               </strong>
             </span>{" "}
-            Details are listed below.
+            — transforming ideas into powerful, user-friendly applications. Details are listed below.
           </p>
           <div className="flex items-center justify-between max-w-[300px] sm:max-w-[330px] mx-auto py-4">
             <a
