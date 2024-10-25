@@ -22,8 +22,11 @@ import gitHubImg from '/public/assets/skills/github.png';
 import flaskImg from '/public/assets/skills/flask.png';
 import reactqueryImg from '/public/assets/skills/reactquery.png';
 import reacttestingImg from '/public/assets/skills/reacttesting.png'; 
+import kubernetesImg from '/public/assets/skills/kubernetes.png';
+import goImg from '/public/assets/skills/go.png';
+import vercelImg from '/public/assets/skills/vercel.png';
 const skills = [
-  
+ 
   { img: javascriptImg, label: 'JavaScript' },
   { img: reactImg, label: 'React' },
   { img: nextjsImg, label: 'Next.js' }, 
@@ -45,6 +48,9 @@ const skills = [
   { img: flaskImg, label: 'Flask' },
   { img: reactqueryImg, label: 'React Query' },
   { img: reacttestingImg, label: 'React Testing Library' },
+  { img: kubernetesImg, label: 'Kubernetes' },
+  { img: goImg, label: 'Go' },
+  { img: vercelImg, label: 'Vercel' },
 ];
 
 const Skills = () => {
