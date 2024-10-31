@@ -25,6 +25,7 @@ import reacttestingImg from '/public/assets/skills/reacttesting.png';
 import kubernetesImg from '/public/assets/skills/kubernetes.png';
 import goImg from '/public/assets/skills/go.png';
 import vercelImg from '/public/assets/skills/vercel.png';
+import reactnativeImg from '/public/assets/skills/reactnative.png';
 const skills = [
  
   { img: javascriptImg, label: 'JavaScript' },
@@ -51,6 +52,7 @@ const skills = [
   { img: kubernetesImg, label: 'Kubernetes' },
   { img: goImg, label: 'Go' },
   { img: vercelImg, label: 'Vercel' },
+  { img: reactnativeImg, label: 'React Native' },
 ];
 
 const Skills = () => {
@@ -80,7 +82,7 @@ const Skills = () => {
     </section>
   )
 };
-  
+ 
 
 
 export default Skills
