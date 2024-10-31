@@ -1,5 +1,4 @@
 'use client';
-
 import Link from "next/link";
 import React, { useState } from "react";
 
@@ -14,6 +13,14 @@ const Header: React.FC = () => {
         "block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 " +
         "md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white " +
         "dark:hover:bg-gray-700 md:dark:hover:bg-transparent dark:border-gray-700 dark:hover:text-slate-400";
+
+    const navItems = [
+        { name: "Home", path: "/" },
+        { name: "About", path: "/#about" },
+        { name: "Skills", path: "/#skills" },
+        { name: "Contact", path: "/#contact" },
+        { name: "Blog", path: "https://medium.com/@andrewaliaj", external: true }
+    ];
 
     return (
         <nav className="bg-[#f4f3ee] px-2 sm:px-4 py-2.5 w-full dark:bg-[#152028]">
@@ -33,22 +40,33 @@ const Header: React.FC = () => {
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7"></path>
                     </svg>
                 </button>
-
                 <div 
                     id="navbar-menu" 
                     className={`${isCollapsed ? "hidden" : "block"} w-full md:block md:w-auto`}
                 >
                     <ul className="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium">
-                        {["Home", "About", "Skills", "Contact"].map((item) => (
-                            <li key={item}>
-                                <Link 
-                                    href={item === "Home" ? "/" : `/#${item.toLowerCase()}`}
-                                    className={navItemClasses}
-                                    aria-current={item === "Home" ? "page" : undefined}
-                                    onClick={() => setIsCollapsed(true)}
-                                >
-                                    {item}
-                                </Link>
+                        {navItems.map((item) => (
+                            <li key={item.name}>
+                                {item.external ? (
+                                    <a 
+                                        href={item.path}
+                                        className={navItemClasses}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        onClick={() => setIsCollapsed(true)}
+                                    >
+                                        {item.name}
+                                    </a>
+                                ) : (
+                                    <Link 
+                                        href={item.path}
+                                        className={navItemClasses}
+                                        aria-current={item.name === "Home" ? "page" : undefined}
+                                        onClick={() => setIsCollapsed(true)}
+                                    >
+                                        {item.name}
+                                    </Link>
+                                )}
                             </li>
                         ))}
                     </ul>
