@@ -45,7 +45,11 @@ const Main = () => {
             <p className="text-gray-600 dark:text-white text-lg sm:text-xl">
               Let&apos;s connect and discuss how we can work together!
             </p>
-            <Link href="/#contact">
+            <Link 
+              href="/#contact"
+              aria-label="Contact Andrew Aliaj"
+              className="inline-block"
+            >
               <button className="mt-4 px-8 py-3 text-white bg-[#21568a] rounded-lg hover:bg-[#1a4571] transition-colors duration-300 text-lg font-medium">
                 Get in Touch
               </button>
@@ -53,49 +57,60 @@ const Main = () => {
           </div>
 
           <div className="flex items-center justify-between max-w-[400px] sm:max-w-[430px] mx-auto py-4">
-            <a
+            <Link 
               href="https://www.linkedin.com/in/andrewaliaj/"
               target="_blank"
-              rel="noreferrer"
-              aria-label="LinkedIn"
+              rel="noopener noreferrer"
+              aria-label="Visit Andrew Aliaj's LinkedIn Profile"
+              className="social-link"
             >
-              <Tooltip content="LinkedIn" color="primary">
+              <Tooltip content="Connect on LinkedIn" color="primary">
                 <div className="rounded-full shadow-lg shadow-gray-400 p-4 sm:p-6 cursor-pointer hover:scale-110 ease-in duration-300 dark:bg-white dark:shadow-none">
-                  <FaLinkedinIn />
+                  <FaLinkedinIn aria-hidden="true" />
+                  <span className="sr-only">LinkedIn Profile</span>
                 </div>
               </Tooltip>
-            </a>
-            <a
+            </Link>
+            <Link 
               href="https://github.com/Andrewx24"
               target="_blank"
-              rel="noreferrer"
-              aria-label="GitHub"
+              rel="noopener noreferrer"
+              aria-label="Visit Andrew Aliaj's GitHub Profile"
+              className="social-link"
             >
-              <Tooltip content="GitHub" color="primary">
+              <Tooltip content="View GitHub Projects" color="primary">
                 <div className="rounded-full shadow-lg shadow-gray-400 p-4 sm:p-6 cursor-pointer hover:scale-110 ease-in duration-300 dark:bg-white dark:shadow-none">
-                  <FaGithub />
+                  <FaGithub aria-hidden="true" />
+                  <span className="sr-only">GitHub Profile</span>
                 </div>
               </Tooltip>
-            </a>
-            <a
+            </Link>
+            <Link 
               href="https://medium.com/@andrewaliaj"
               target="_blank"
-              rel="noreferrer"
-              aria-label="Medium"
+              rel="noopener noreferrer"
+              aria-label="Read Andrew Aliaj's Blog Posts on Medium"
+              className="social-link"
             >
-              <Tooltip content="Medium" color="primary">
+              <Tooltip content="Read on Medium" color="primary">
                 <div className="rounded-full shadow-lg shadow-gray-400 p-4 sm:p-6 cursor-pointer hover:scale-110 ease-in duration-300 dark:bg-white dark:shadow-none">
-                  <FaMediumM />
+                  <FaMediumM aria-hidden="true" />
+                  <span className="sr-only">Medium Blog</span>
                 </div>
               </Tooltip>
-            </a>
-            <Tooltip content="Email me below" color="primary">
-              <Link href="/#contact">
+            </Link>
+            <Link 
+              href="/#contact"
+              aria-label="Send email to Andrew Aliaj"
+              className="social-link"
+            >
+              <Tooltip content="Send an Email" color="primary">
                 <div className="rounded-full shadow-lg shadow-gray-400 p-4 sm:p-6 cursor-pointer hover:scale-110 ease-in duration-300 dark:bg-white dark:shadow-none">
-                  <AiOutlineMail />
+                  <AiOutlineMail aria-hidden="true" />
+                  <span className="sr-only">Contact Form</span>
                 </div>
-              </Link>
-            </Tooltip>
+              </Tooltip>
+            </Link>
           </div>
         </div>
       </main>
