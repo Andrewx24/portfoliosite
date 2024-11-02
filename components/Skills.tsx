@@ -26,6 +26,9 @@ import kubernetesImg from '/public/assets/skills/kubernetes.png';
 import goImg from '/public/assets/skills/go.png';
 import vercelImg from '/public/assets/skills/vercel.png';
 import reactnativeImg from '/public/assets/skills/reactnative.png';
+import figmaImg from '/public/assets/skills/figma.png';
+
+
 const skills = [
  
   { img: javascriptImg, label: 'JavaScript' },
@@ -53,6 +56,7 @@ const skills = [
   { img: goImg, label: 'Go' },
   { img: vercelImg, label: 'Vercel' },
   { img: reactnativeImg, label: 'React Native' },
+  { img: figmaImg, label: 'Figma' },
 ];
 
 const Skills = () => {
