@@ -45,28 +45,30 @@ const Main = () => {
             <p className="text-gray-600 dark:text-white text-lg sm:text-xl">
               Let&apos;s connect and discuss how we can work together!
             </p>
-            <Link 
-              href="/#contact"
-              aria-label="Contact Andrew Aliaj"
-              className="block w-fit mx-auto"
-            >
-              <button className="mt-4 px-8 py-4 min-h-[44px] min-w-[44px] text-white bg-[#21568a] rounded-lg hover:bg-[#1a4571] transition-colors duration-300 text-lg font-medium">
-                Get in Touch
-              </button>
-            </Link>
+            <div className="flex justify-center mt-4">
+              <Link 
+                href="/#contact"
+                aria-label="Contact Andrew Aliaj"
+                className="inline-block p-2"
+              >
+                <button className="px-8 py-4 h-12 min-w-[150px] text-white bg-[#21568a] rounded-lg hover:bg-[#1a4571] transition-colors duration-300 text-lg font-medium">
+                  Get in Touch
+                </button>
+              </Link>
+            </div>
           </div>
 
-          <div className="flex items-center justify-between max-w-[440px] sm:max-w-[480px] mx-auto py-4 gap-4">
+          <div className="flex items-center justify-between max-w-[440px] sm:max-w-[480px] mx-auto py-4 gap-6">
             <Link 
               href="https://www.linkedin.com/in/andrewaliaj/"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Visit Andrew Aliaj's LinkedIn Profile"
-              className="social-link min-h-[44px] min-w-[44px]"
+              className="p-2"
             >
               <Tooltip content="Connect on LinkedIn" color="primary">
-                <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300 dark:bg-white dark:shadow-none">
-                  <FaLinkedinIn size={20} aria-hidden="true" />
+                <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300 dark:bg-white dark:shadow-none h-16 w-16 flex items-center justify-center">
+                  <FaLinkedinIn size={24} aria-hidden="true" />
                   <span className="sr-only">LinkedIn Profile</span>
                 </div>
               </Tooltip>
@@ -76,11 +78,11 @@ const Main = () => {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Visit Andrew Aliaj's GitHub Profile"
-              className="social-link min-h-[44px] min-w-[44px]"
+              className="p-2"
             >
               <Tooltip content="View GitHub Projects" color="primary">
-                <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300 dark:bg-white dark:shadow-none">
-                  <FaGithub size={20} aria-hidden="true" />
+                <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300 dark:bg-white dark:shadow-none h-16 w-16 flex items-center justify-center">
+                  <FaGithub size={24} aria-hidden="true" />
                   <span className="sr-only">GitHub Profile</span>
                 </div>
               </Tooltip>
@@ -90,11 +92,11 @@ const Main = () => {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Read Andrew Aliaj's Blog Posts on Medium"
-              className="social-link min-h-[44px] min-w-[44px]"
+              className="p-2"
             >
               <Tooltip content="Read on Medium" color="primary">
-                <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300 dark:bg-white dark:shadow-none">
-                  <FaMediumM size={20} aria-hidden="true" />
+                <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300 dark:bg-white dark:shadow-none h-16 w-16 flex items-center justify-center">
+                  <FaMediumM size={24} aria-hidden="true" />
                   <span className="sr-only">Medium Blog</span>
                 </div>
               </Tooltip>
@@ -102,11 +104,11 @@ const Main = () => {
             <Link 
               href="/#contact"
               aria-label="Send email to Andrew Aliaj"
-              className="social-link min-h-[44px] min-w-[44px]"
+              className="p-2"
             >
               <Tooltip content="Send an Email" color="primary">
-                <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300 dark:bg-white dark:shadow-none">
-                  <AiOutlineMail size={20} aria-hidden="true" />
+                <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300 dark:bg-white dark:shadow-none h-16 w-16 flex items-center justify-center">
+                  <AiOutlineMail size={24} aria-hidden="true" />
                   <span className="sr-only">Contact Form</span>
                 </div>
               </Tooltip>
