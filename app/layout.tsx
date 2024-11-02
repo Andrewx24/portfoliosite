@@ -1,20 +1,17 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
-
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
-
 import { ReactNode } from "react";
-
 const inter = Inter({ subsets: ["latin"] });
-
 import { Metadata } from 'next';
 
-// Viewport configuration should be in a separate export
+// Updated viewport configuration with accessible values
 export const viewport = {
   width: "device-width",
   initialScale: 1,
-  maximumScale: 1,
+  minimumScale: 1,
+  maximumScale: 5, // Changed from 1 to 5 to allow zooming
   themeColor: "#21568a",
   colorScheme: 'dark light'
 };
@@ -111,7 +108,7 @@ export const metadata: Metadata = {
     "format-detection": "telephone=no",
   }
 };
-  
+
 // Define the props type for RootLayout
 interface RootLayoutProps {
   children: ReactNode;
@@ -121,7 +118,6 @@ export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en">
       <body className={inter.className}>
-        
         <Analytics />
         <SpeedInsights />
         {children}
