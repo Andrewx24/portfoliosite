@@ -51,14 +51,14 @@ const Main = () => {
                 aria-label="Contact Andrew Aliaj"
                 className="inline-block p-2"
               >
-                <button className="px-8 py-4 h-12 min-w-[150px] text-white bg-[#21568a] rounded-lg hover:bg-[#1a4571] transition-colors duration-300 text-lg font-medium">
+                <button className="px-10 py-6 h-14 min-w-[160px] text-white bg-[#21568a] rounded-lg hover:bg-[#1a4571] transition-colors duration-300 text-lg font-medium">
                   Get in Touch
                 </button>
               </Link>
             </div>
           </div>
 
-          <div className="flex items-center justify-between max-w-[440px] sm:max-w-[480px] mx-auto py-4 gap-6">
+          <div className="flex items-center justify-between max-w-[440px] sm:max-w-[480px] mx-auto py-4 gap-8">
             <Link 
               href="https://www.linkedin.com/in/andrewaliaj/"
               target="_blank"
@@ -67,7 +67,7 @@ const Main = () => {
               className="p-2"
             >
               <Tooltip content="Connect on LinkedIn" color="primary">
-                <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300 dark:bg-white dark:shadow-none h-16 w-16 flex items-center justify-center">
+                <div className="rounded-full shadow-lg shadow-gray-400 p-8 cursor-pointer hover:scale-110 ease-in duration-300 dark:bg-white dark:shadow-none h-20 w-20 flex items-center justify-center">
                   <FaLinkedinIn size={24} aria-hidden="true" />
                   <span className="sr-only">LinkedIn Profile</span>
                 </div>
@@ -81,7 +81,7 @@ const Main = () => {
               className="p-2"
             >
               <Tooltip content="View GitHub Projects" color="primary">
-                <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300 dark:bg-white dark:shadow-none h-16 w-16 flex items-center justify-center">
+                <div className="rounded-full shadow-lg shadow-gray-400 p-8 cursor-pointer hover:scale-110 ease-in duration-300 dark:bg-white dark:shadow-none h-20 w-20 flex items-center justify-center">
                   <FaGithub size={24} aria-hidden="true" />
                   <span className="sr-only">GitHub Profile</span>
                 </div>
@@ -95,7 +95,7 @@ const Main = () => {
               className="p-2"
             >
               <Tooltip content="Read on Medium" color="primary">
-                <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300 dark:bg-white dark:shadow-none h-16 w-16 flex items-center justify-center">
+                <div className="rounded-full shadow-lg shadow-gray-400 p-8 cursor-pointer hover:scale-110 ease-in duration-300 dark:bg-white dark:shadow-none h-20 w-20 flex items-center justify-center">
                   <FaMediumM size={24} aria-hidden="true" />
                   <span className="sr-only">Medium Blog</span>
                 </div>
@@ -107,7 +107,7 @@ const Main = () => {
               className="p-2"
             >
               <Tooltip content="Send an Email" color="primary">
-                <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300 dark:bg-white dark:shadow-none h-16 w-16 flex items-center justify-center">
+                <div className="rounded-full shadow-lg shadow-gray-400 p-8 cursor-pointer hover:scale-110 ease-in duration-300 dark:bg-white dark:shadow-none h-20 w-20 flex items-center justify-center">
                   <AiOutlineMail size={24} aria-hidden="true" />
                   <span className="sr-only">Contact Form</span>
                 </div>
