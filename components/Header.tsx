@@ -19,7 +19,8 @@ const Header: React.FC = () => {
         { name: "About", path: "/#about" },
         { name: "Skills", path: "/#skills" },
         { name: "Contact", path: "/#contact" },
-        { name: "Blog", path: "https://medium.com/@andrewaliaj", external: true }
+        { name: "Blog", path: "https://medium.com/@andrewaliaj", external: true },
+        { name: "My Startup", path: "https://productivitysumo.com", external: true },
     ];
 
     return (
