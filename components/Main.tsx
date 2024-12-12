@@ -56,15 +56,16 @@ const Main = () => {
                </button>
               </Link>
               <Link 
-                href="https://productivitysumo.com"
-                aria-label="My Startup: Productivity Sumo"
-                className="inline-block p-2"
-                >
-
-                <button className="px-10 py-6 h-14 min-w-[160px] text-white bg-[#21568a] rounded-lg hover:bg-[#1a4571] transition-colors duration-300 text-lg font-medium">
-                  My Startup
-                </button>
-                </Link>
+    href="https://productivitysumo.com"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="My Startup: Productivity Sumo"
+    className="inline-block p-2"
+>
+    <button className="px-10 py-6 h-14 min-w-[160px] text-white bg-[#21568a] rounded-lg hover:bg-[#1a4571] transition-colors duration-300 text-lg font-medium">
+        My Startup
+    </button>
+</Link>
             </div>
           </div>
 
