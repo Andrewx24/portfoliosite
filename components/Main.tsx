@@ -1,5 +1,3 @@
-"use client";
-
 import React from "react";
 import { AiOutlineMail } from "react-icons/ai";
 import { FaGithub, FaLinkedinIn, FaMediumM } from "react-icons/fa";
@@ -23,7 +21,7 @@ const Main = () => {
             <span className="text-[#21568a] font-bold dark:text-white">
               <strong>Full Stack Developer</strong>
             </span>{" "}
-            building innovative solutions in the NY Tri-State area. Passionate about creating scalable applications with{" "}
+            delivering enterprise-grade solutions in the NY Tri-State area. Specialized in building scalable SaaS applications and cloud architectures with{" "}
             <span className="text-[#21568a] font-bold dark:text-white">
               <strong>
                 JavaScript, React, Next.js, Node.js, TypeScript, Python, SQL
@@ -35,15 +33,14 @@ const Main = () => {
             </span>
             {", and "}
             <span className="text-[#21568a] font-bold dark:text-white">
-              <strong>much more</strong>
-            </span>{" "}
-            &mdash; transforming ideas into powerful, user-friendly applications. Details are listed below.
+              <strong>Cloud Technologies</strong>
+            </span>
+            . From concept to deployment, transforming business requirements into robust, user-centric applications with comprehensive frontend and backend expertise.
           </p>
           
-          {/* Call to Action Section */}
           <div className="mt-8 mb-6">
             <p className="text-gray-600 dark:text-white text-lg sm:text-xl">
-              Let&apos;s connect and discuss how we can work together!
+              Ready to build your next innovative solution? Let&apos;s collaborate!
             </p>
             <div className="flex justify-center mt-4">
               <Link 
@@ -52,20 +49,20 @@ const Main = () => {
                 className="inline-block p-2"
               >
                 <button className="px-10 py-6 h-14 min-w-[160px] text-white bg-[#21568a] rounded-lg hover:bg-[#1a4571] transition-colors duration-300 text-lg font-medium">
-                  Get in Touch
+                  Contact Me
                </button>
               </Link>
               <Link 
-    href="https://productivitysumo.com"
-    target="_blank"
-    rel="noopener noreferrer"
-    aria-label="My Startup: Productivity Sumo"
-    className="inline-block p-2"
->
-    <button className="px-10 py-6 h-14 min-w-[160px] text-white bg-[#21568a] rounded-lg hover:bg-[#1a4571] transition-colors duration-300 text-lg font-medium">
-        My Startup
-    </button>
-</Link>
+                href="https://productivitysumo.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="My Startup: Productivity Sumo"
+                className="inline-block p-2"
+              >
+                <button className="px-10 py-6 h-14 min-w-[160px] text-white bg-[#21568a] rounded-lg hover:bg-[#1a4571] transition-colors duration-300 text-lg font-medium">
+                    My SaaS Startup
+                </button>
+              </Link>
             </div>
           </div>
 
@@ -105,7 +102,7 @@ const Main = () => {
               aria-label="Read Andrew Aliaj's Blog Posts on Medium"
               className="p-2"
             >
-              <Tooltip content="Read on Medium" color="primary">
+              <Tooltip content="Read Technical Articles" color="primary">
                 <div className="rounded-full shadow-lg shadow-gray-400 p-8 cursor-pointer hover:scale-110 ease-in duration-300 dark:bg-white dark:shadow-none h-20 w-20 flex items-center justify-center">
                   <FaMediumM size={24} aria-hidden="true" />
                   <span className="sr-only">Medium Blog</span>
@@ -117,7 +114,7 @@ const Main = () => {
               aria-label="Send email to Andrew Aliaj"
               className="p-2"
             >
-              <Tooltip content="Send an Email" color="primary">
+              <Tooltip content="Start a Conversation" color="primary">
                 <div className="rounded-full shadow-lg shadow-gray-400 p-8 cursor-pointer hover:scale-110 ease-in duration-300 dark:bg-white dark:shadow-none h-20 w-20 flex items-center justify-center">
                   <AiOutlineMail size={24} aria-hidden="true" />
                   <span className="sr-only">Contact Form</span>
