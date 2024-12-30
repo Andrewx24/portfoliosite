@@ -107,6 +107,12 @@ export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
+      <script
+  defer
+  data-website-id="6772bc0897077ee580064227"
+  data-domain="andrewaliaj.dev"
+  src="https://datafa.st/js/script.js">
+</script>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
       </head>
