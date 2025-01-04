@@ -4,11 +4,11 @@ import "./globals.css";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { ReactNode } from "react";
-
-
+import Script from 'next/script';
 
 const inter = Inter({ subsets: ["latin"] });
 
+// Enhanced viewport settings for better mobile experience
 export const viewport = {
   width: "device-width",
   initialScale: 1,
@@ -18,57 +18,64 @@ export const viewport = {
     { media: "(prefers-color-scheme: light)", color: "#ffffff" },
     { media: "(prefers-color-scheme: dark)", color: "#152028" }
   ],
-  colorScheme: "dark light"
+  colorScheme: "dark light",
+  userScalable: true // Better accessibility
 };
 
+// Enhanced metadata with more targeted keywords and rich snippets
 export const metadata = {
   metadataBase: new URL('https://andrewaliaj.com'),
   title: {
-    default: "Andrew Aliaj | Software Engineer & Full Stack Developer",
-    template: "%s | Andrew Aliaj"
+    default: "Andrew Aliaj | Full Stack & AI Software Engineer | NY Tech Expert",
+    template: "%s | Andrew Aliaj - Software Solutions"
   },
-  description: "Dynamic Software Engineer and Full Stack Developer specializing in AI, LLMs, and scalable web applications. Expert in JavaScript, TypeScript, Golang, Python, React, Next.js, Node.js, and cloud architecture.",
+  description: "Expert Software Engineer in NY specializing in AI, LLMs, and enterprise web applications. Delivering scalable solutions with React, Node.js, Python & AWS. 10+ years of industry experience.",
   keywords: [
-    "Software Engineer",
-    "Full Stack Developer",
-    "AI Engineer",
-    "Machine Learning",
-    "JavaScript",
-    "TypeScript",
-    "Golang",
-    "Python",
-    "React",
-    "Next.js",
-    "Node.js",
-    "Django",
-    "AWS",
-    "Cloud Architecture",
     "NY Software Engineer",
-    "AI Development",
-    "LLM Integration"
+    "Full Stack Developer New York",
+    "AI Engineer",
+    "Enterprise Software Solutions",
+    "React Developer",
+    "Next.js Expert",
+    "TypeScript Developer",
+    "Cloud Architecture Specialist",
+    "AI Integration Services",
+    "Custom Software Development",
+    "Web Application Developer",
+    "Technology Consultant NY",
+    "Software Architecture Expert",
+    "Digital Transformation Engineer",
+    "Tech Solutions Provider"
   ],
   authors: [{ name: "Andrew Aliaj", url: "https://andrewaliaj.com" }],
   creator: "Andrew Aliaj",
+  publisher: "Andrew Aliaj",
+  formatDetection: {
+    email: false,
+    telephone: false,
+  },
   openGraph: {
     type: "website",
     locale: "en_US",
     url: "https://andrewaliaj.com",
-    siteName: "Andrew Aliaj - Software Engineer",
-    title: "Andrew Aliaj | Software Engineer & Full Stack Developer",
-    description: "Dynamic Software Engineer specializing in AI, LLMs, and full-stack development. Building innovative solutions with modern technologies.",
+    siteName: "Andrew Aliaj - Enterprise Software Solutions",
+    title: "Andrew Aliaj | Full Stack & AI Software Engineer | NY Tech Expert",
+    description: "Transform your business with custom software solutions. Specializing in AI integration, enterprise web applications, and cloud architecture. Schedule a consultation today.",
     images: [{
       url: "/og-image.png",
       width: 1200,
       height: 630,
-      alt: "Andrew Aliaj - Software Engineer Portfolio"
+      alt: "Andrew Aliaj - Software Engineering Solutions",
+      type: "image/png"
     }]
   },
   twitter: {
     card: "summary_large_image",
-    title: "Andrew Aliaj | Software Engineer & Full Stack Developer",
-    description: "Building innovative solutions with AI, LLMs, and modern web technologies.",
+    title: "Andrew Aliaj | Enterprise Software Solutions & AI Integration",
+    description: "Custom software solutions for modern businesses. AI, cloud, and enterprise applications expert.",
     images: ["/twitter-image.png"],
-    creator: "@andrewaliaj"
+    creator: "@andrewaliaj",
+    site: "@andrewaliaj"
   },
   robots: {
     index: true,
@@ -79,6 +86,7 @@ export const metadata = {
       "max-video-preview": -1,
       "max-image-preview": "large",
       "max-snippet": -1,
+      noimageindex: false,
     },
   },
   alternates: {
@@ -95,6 +103,9 @@ export const metadata = {
     ],
     apple: [
       { url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" }
+    ],
+    other: [
+      { rel: "mask-icon", url: "/safari-pinned-tab.svg", color: "#21568a" }
     ]
   }
 };
@@ -107,25 +118,41 @@ export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-      <script
-  defer
-  data-website-id="6772bc0897077ee580064227"
-  data-domain="andrewaliaj.dev"
-  src="https://datafa.st/js/script.js">
-</script>
+        {/* Preconnect to external domains */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-      </head>
-      <body className={inter.className}>
         
-         <div className="flex min-h-screen flex-col">
-           
-            <main className="flex-1">
-              {children}
-            </main>
-           
-          </div>
-       
+        {/* Schema.org structured data for better SEO */}
+        <Script
+          id="schema-person"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Person",
+              name: "Andrew Aliaj",
+              url: "https://andrewaliaj.com",
+              jobTitle: "Software Engineer",
+              worksFor: {
+                "@type": "Organization",
+                name: "Independent Consultant"
+              },
+              description: "Full Stack Software Engineer specializing in AI and enterprise solutions",
+              sameAs: [
+                "https://github.com/Andrewx24",
+                "https://www.linkedin.com/in/andrewaliaj/",
+                "https://medium.com/@andrewaliaj"
+              ]
+            })
+          }}
+        />
+      </head>
+      <body className={`${inter.className} min-h-screen flex flex-col`}>
+        <div className="flex min-h-screen flex-col">
+          <main className="flex-1">
+            {children}
+          </main>
+        </div>
         <Analytics />
         <SpeedInsights />
       </body>

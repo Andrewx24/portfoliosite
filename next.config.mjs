@@ -9,8 +9,13 @@ const withBundleAnalyzer = BundleAnalyzer({
 /**
  * @type {import('next').NextConfig}
  */
+// Add to next.config.mjs
 const nextConfig = {
-  /* config options here */
+  images: {
+    formats: ['image/avif', 'image/webp'],
+  },
+  compress: true,
+  poweredByHeader: false
 };
 
 export default withBundleAnalyzer(nextConfig);
