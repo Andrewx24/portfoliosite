@@ -43,7 +43,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
               "@context": "https://schema.org",
               "@type": "Person",
               name: "Andrew Aliaj",
-              url: "https://andrewaliaj.com",
+              url: "https://andrewaliaj.dev",
               jobTitle: "Software Engineer",
               worksFor: {
                 "@type": "Organization",
@@ -59,13 +59,13 @@ export default function RootLayout({ children }: RootLayoutProps) {
           }}
         />
 
-        <Script
-          id="datafast-analytics"
-          defer
-          data-website-id="6769cb64a4bc111190f37430"
-          data-domain="productivitysumo.com"
-          src="/js/script.js"
-        />
+<script
+  defer
+  data-website-id="6772bc0897077ee580064227"
+  data-domain="andrewaliaj.dev"
+   src="/js/script.js"
+  >
+</script>
       </head>
       <body className={`${inter.className} min-h-screen flex flex-col`}>
         <div className="flex min-h-screen flex-col">
