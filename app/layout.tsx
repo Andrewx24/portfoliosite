@@ -36,6 +36,13 @@ export default function RootLayout({ children }: RootLayoutProps) {
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         
         <Script
+        
+  defer
+  data-website-id="6772bc0897077ee580064227"
+  data-domain="andrewaliaj.dev"
+   src="/js/script.js"
+  >
+
           id="schema-person"
           type="application/ld+json"
           dangerouslySetInnerHTML={{
